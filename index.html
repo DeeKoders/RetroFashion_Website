@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+		h1 span{
+			margin-left: 35%;
+			text-align: center;
+			margin-right: 7px;
+			padding-right: 50px;
+			padding-left: 50px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			text-align: center;
+			font-size: 30px;
+			font-family: Algerian, serif;
+			color:black;
+			border: solid;
+			border-color: grey;
+			border-width: 1.5px;
+			background-color: yellow;
+		}
+	.module{
+		display: inline-block;
+		border-top-style: ridge;
+		border-top-width: 10px;
+	     border-color: yellow;
+		margin: 20px;
+	    align-items: center;
+	    width: 380px;
+	     height: 100px;
+	    margin-left: 15px;
+		background-color: white;
+
+	}
+        .pics{
+	        border-top-style: ridge;
+	        border-top-width: 15px;
+	        border-color: yellow;
+	        margin: 20px;
+	        align-items: center;
+	        width: 380px;
+	        height: 250px;
+	        margin-left: 25px;
+        }
+        body {
+          background-image: url('Background.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        nav ul{
+            width: 75em;
+	        margin: 0;
+            margin-top: 1em;
+            padding: 0;
+	        padding-bottom: 1.2em;
+	        list-style: none;
+            background-color: yellow;
+        }
+        nav li {
+	        display: inline-block;
+	        margin-left: 75px;
+	        padding-top:30px;
+	        position: relative;
+            padding-bottom: 10;
+        }
+        nav a {
+            
+	        color: grey;
+	        text-decoration: none;
+	        text-transform: uppercase;
+	        font-size: 19px;
+            
+        }
+        #wholepage{
+            width: 1300px;
+	        margin-left: auto;
+	        margin-right: auto;
+        }
+		.datetime{
+			font-family: algerian, serif;
+			color:black;
+			font-weight: 900;
+			margin-left: 50px;
+			display: inline-block;
+			padding-right: 200px;
+			padding-left: 200px;
+		}
+        </style>
+    <meta charset="UTF-8">
+    <title>RETRO FASHION</title>
+	<link rel="shortcut icon" type="image/jpg" href="./Background.jpg"/>
+</head>
+<body >
+<div id="wholepage" >
+    <center><header>	
+		<div>
+			<nav>
+				<span ><ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="clothing.html">Clothings</a></li>		
+					<li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="contactUs.html">Contact US</a></li>
+                    <li><a href="aboutus.html">About US</a></li>
+				</ul></span>
+			</nav>
+			
+		</div>
+		
+        
+
+	</header></center>
+	<center><div class="datetime">
+		<p>Date: <span id="datetime"></span></p>
+		<script>
+		var dt = new Date();
+		document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+		</script>
+
+	</div>
+	<div class="datetime">
+		<p>Time: <span id="time"></span></p>
+		<script>
+		var dt = new Date();
+		document.getElementById("time").innerHTML = dt.toLocaleTimeString();
+		</script>
+
+	</div></center>
+	<br>
+	<h1 ><span>RETRO FASHION STORE</span></h1>
+	<br>
+	<img src="./front.png" alt="" style="width: 1300px; border-style: solid; border-width: 5px;">
+    
+	<div class="module">
+		<h1><center>Secure Payment</center></h1>
+	</div>
+
+	<div class="module">
+		<h1><center>Nationwide Delivery</center></h1>
+	</div>
+
+	<div class="module">
+		<h1><center>30 days Return</center></h1>
+	</div>	<br><br><br>
+	<h1 ><span>Featured Products</span></h1>	<br><br>
+	<img alt="Pictures" class="pics" src="3.jpg">
+	<img alt="Pictures" class="pics" src="1.jpg">
+	<img alt="Pictures" class="pics" src="2.jpg">
+</div>
+        
+</body>
+</html>
