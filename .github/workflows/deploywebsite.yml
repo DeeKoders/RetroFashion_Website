@@ -32,4 +32,4 @@ jobs:
         run: sudo npm install --global surge
         
       - name: Deploying using Surge
-        run: surge ./ deekoders-retro.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./index.html deekoders-retro.surge.sh --token ${{ secrets.SURGE_TOKEN }}
